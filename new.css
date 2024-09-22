@@ -16,7 +16,6 @@ body {
 }
 
 .card-header {
-    background-color: #6c757d; /* Bootstrap secondary color */
     color: white;
     font-weight: bold;
 }
@@ -46,6 +45,16 @@ body {
     border-color: #4e555b;
 }
 
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
 /* Results Container */
 #resultsContainer h5 {
     font-size: 1.25rem;
@@ -62,7 +71,62 @@ body {
 #workFolder .card {
     margin-bottom: 15px;
 }
+
 .img-fluid.rounded.shadow {
     max-height: 300px;
     object-fit: cover;
+}
+
+/* Suggestion List */
+#suggestionsList {
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    width: 100%;
+    top: 100%;
+    left: 0;
+}
+
+#suggestionsList li {
+    cursor: pointer;
+}
+
+#suggestionsList li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Notification Styling */
+.notification {
+    background-color: #17a2b8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+/* History Modal Styling */
+#historyContainer .history-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#historyContainer .history-item:last-child {
+    border-bottom: none;
+}
+
+.history-item button {
+    margin-left: 10px;
+}
+
+/* Advanced Search Card */
+#advancedSearch .form-label {
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    #suggestionsList {
+        width: 100%;
+    }
 }
